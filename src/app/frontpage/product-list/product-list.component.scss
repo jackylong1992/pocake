@@ -1,3 +1,4 @@
+@import '../../../scss/mixin.scss';
 .product-list-component {
     padding: 40px 0 60px;
     h2 {
@@ -30,6 +31,10 @@
           background: url("../../../assets/images/product-2.jpg") center no-repeat;
           background-size: cover;
         }
+      }
+
+      @media (max-width: $screen-xs-max) {
+        margin-bottom: 15px;
       }
     }
 }

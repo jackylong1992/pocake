@@ -1,25 +1,30 @@
 <div id="top">
   <div class="main-logo">
-    <a routerLink="/"></a>
+    <a routerLink="/frontpage"></a>
       PÔ CAKE
   </div>
   <div class="info">
     Gọi điện ngay - Ship liền tay (24/7)
     0985551508
   </div>
+  <div class="visible-xs collapse-button" (click)="collapseButtonClick()">
+    <div class="icon-bar"></div>
+    <div class="icon-bar"></div>
+    <div class="icon-bar"></div>
+  </div>
 </div>
-<nav class="navbar">
+<nav class="navbar" [ngClass]="{'collapsed': isCollapsed}">
   <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li><a routerLink="/frontpage">Home</a></li>
       <li class="has-sub-menu">
-        <a href="#">San pham</a>
+        <a>San pham</a>
         <ul>
           <li><a>Bong lan trung muoi</a></li>
           <li><a>Kho ga la chanh</a></li>
           <li><a>Banh ga to</a></li>
         </ul>
       </li>
-      <li><a href="#">Bai viet</a></li>
+      <li><a routerLink="#">Bai viet</a></li>
       <li><a routerLink="/map">Lien he</a></li>
   </ul>
 </nav>

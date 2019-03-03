@@ -7,9 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavBarComponent {
+  isCollapsed: boolean
   constructor( private router: Router) {
   }
   ngOnInit(): void {
-  
+    this.isCollapsed = false;
+  }
+
+  collapseButtonClick () {
+    this.isCollapsed = !this.isCollapsed;
   }
 }
