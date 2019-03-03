@@ -12,12 +12,13 @@
     padding-left: 9999px;
     padding-right: 9999px;
 }
-$screen-xs: 768px;
-$screen-sm: 992px;
-$screen-md: 1200px;
-$screen-lg: 1400px;
-$screen-md-min: $screen-md;
-$screen-md-max: $screen-lg - 1;
+$screen-xs-max: 768px;
+$screen-sm-min: $screen-xs-max + 1px;
+$screen-sm-max: 992px;
+$screen-md-min: $screen-sm-max + 1px;
+$screen-md-max: 1200px;
+$screen-lg-min: 1400px;
+
 $card-length: 135px;
 
 $primary-color: #a9001b;

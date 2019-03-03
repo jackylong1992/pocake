@@ -98,5 +98,8 @@ $navbar-horizontal-padding: 25px;
     align-items: center;
     background: #850015;
     color: #fff;
+    @media (max-width: $screen-xs-max) {
+      display: none;
+    }
   }
 }
