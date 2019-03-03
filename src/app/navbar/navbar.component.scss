@@ -1,0 +1,39 @@
+@import '../../scss/mixin.scss';
+.navbar.navbar-inverse {
+  border-radius: 0;
+  border-radius: 0;
+  background: $primary-color;
+  border: none;
+  border-bottom: solid 1px;
+  @extend %full-width;
+}
+#top {
+  height: 55px;
+  @extend %full-width;
+  background: #fff;
+  .main-logo {
+    width: 250px;
+    height: 50px;
+    margin-top: 3px;
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 31px;
+    color: #850015;
+    font-weight: bold;
+    background: url("../../assets/images/pocake-logo.jpg") left no-repeat;
+    background-size: contain;
+    padding-left: 60px;
+  }
+  .info {
+    float: right;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: #850015;
+    color: #fff;
+  }
+}
