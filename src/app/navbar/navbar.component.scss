@@ -1,11 +1,71 @@
 @import '../../scss/mixin.scss';
-.navbar.navbar-inverse {
+$navbar-horizontal-padding: 25px;
+.navbar {
   border-radius: 0;
   border-radius: 0;
   background: $primary-color;
   border: none;
-  border-bottom: solid 1px;
   @extend %full-width;
+  ul {
+    padding-left: 0;
+    li {
+      list-style-type: none;
+      a:hover {
+        background: $primary-color;
+        opacity: 0.7;
+        text-decoration: none;
+      }
+    }
+  }
+
+  > ul {
+    padding-left: 0;
+    > li {
+      list-style-type: none;
+      
+      > a {
+        
+        color: #fff;
+        font-weight: bold;
+        font-size: $font-size-6;
+        padding-left: $navbar-horizontal-padding;
+        padding-right: $navbar-horizontal-padding;
+        
+      }
+      &.active a {
+        color: #fff;
+        background: $primary-color;
+        opacity: 0.7;
+      }
+      &.has-sub-menu {
+        background: url("../../assets/images/arrow-down.svg") right no-repeat;
+        position: relative;
+        &:hover {
+          ul {
+            display: block;
+            opacity: 0.7;
+          }
+        }
+        ul {
+          display: none;
+          position: absolute;
+          width: 150px;
+          background: $primary-color;
+
+          li {
+            padding: 5px $navbar-horizontal-padding;
+            a {
+              color: #fff;
+              cursor: pointer;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          } 
+        }
+        
+      }
+    }
+  }
 }
 #top {
   height: 55px;
