@@ -87,6 +87,13 @@ $navbar-horizontal-padding: 25px;
     background: url("../../assets/images/pocake-logo.jpg") left no-repeat;
     background-size: contain;
     padding-left: 60px;
+    position: relative;
+
+    a {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   }
   .info {
     float: right;

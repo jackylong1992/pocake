@@ -1,0 +1,15 @@
+@import '../../scss/mixin.scss';
+.map-component {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  agm-map {
+    height: 360px;
+  }
+  .button {
+    display: inline-block;
+    padding: 5px 30px;
+    color: #fff;
+    background: $primary-color;
+    cursor: pointer;
+  }
+}

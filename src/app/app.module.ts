@@ -9,7 +9,9 @@ import { AppComponent } from './app.component';
 import { NavBarComponent} from './navbar/navbar.component';
 import { FooterComponent} from './footer/footer.component';
 
+
 import { FrontPageModule } from './frontpage/frontpage.module';
+import { MapPageModule } from './map/map.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
@@ -17,7 +19,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
   declarations: [
     AppComponent,
     NavBarComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
       { path: '', redirectTo: 'frontpage', pathMatch: 'full' },
       { path: '**', redirectTo: 'frontpage', pathMatch: 'full' }
     ]),
-    FrontPageModule
+    FrontPageModule,
+    MapPageModule
   ],
   bootstrap: [AppComponent]
 })
