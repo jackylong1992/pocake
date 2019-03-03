@@ -6,7 +6,7 @@ import { OnChanges, Input, EventEmitter, Output } from '@angular/core';
   templateUrl: './template.component.html',
   styleUrls: ['./template.component.scss']
 })
-export class TemplateComponent {
+export default class TemplateComponent {
   ngOnInit(): void {
     console.log("template component");
   }

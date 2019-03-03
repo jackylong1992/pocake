@@ -4,6 +4,9 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import {MaterialModule} from '../material.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import ProductListComponent from './product-list/product-list.component';
+import ProductItemComponent from './product-item/product-item.component';
+
 
 @NgModule({
   imports: [
@@ -21,7 +24,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ReactiveFormsModule
   ],
   declarations: [
-    FrontPageWrapperComponent
+    FrontPageWrapperComponent,
+    ProductListComponent,
+    ProductItemComponent
   ],
   exports: [
     
