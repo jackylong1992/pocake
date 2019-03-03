@@ -17,7 +17,7 @@
     .description {
       height: 150px;
       padding: 15px;
-      font-size: $font-size-5;
+      font-size: $font-size-6;
       .title {
         color: $primary-color;
         font-weight: bold;
@@ -25,6 +25,11 @@
       .info {
         float: right;
         color: #ccc;
+
+        &.title {
+          color: $primary-color;
+          font-weight: bold;
+        }
       }
     }
 }
