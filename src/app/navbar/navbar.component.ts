@@ -1,6 +1,4 @@
 import { Component, OnChanges, Input, EventEmitter, Output } from '@angular/core';
-import {NavBarService} from '../frontpage/nav-bar.service';
-import { DataService } from '../frontpage/data.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavBarComponent {
-  constructor(private navbarService: NavBarService, private dataService: DataService, private router: Router) {
+  constructor( private router: Router) {
   }
   ngOnInit(): void {
   
