@@ -6,6 +6,9 @@ $navbar-horizontal-padding: 25px;
   background: $primary-color;
   border: none;
   @extend %full-width;
+  .nav.navbar-nav {
+    margin-left: -22px;
+  }
   ul {
     padding-left: 0;
     li {
