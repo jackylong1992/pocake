@@ -21,6 +21,12 @@
       height: 150px;
       padding: 15px;
       font-size: $font-size-6;
+      p {
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-top: 0;
+      }
       .title {
         color: $primary-color;
         font-weight: bold;
