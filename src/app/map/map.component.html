@@ -2,10 +2,15 @@
   <div class="row">
     <div class="col-sm-4">
         <div class="button" (click)="resetMap()">Reset Map</div>
-        <h3>Co so 1:</h3>
-        <p>so 78/2 - To 4 - Bang B - Hoang Liet - Hoang Mai - HN</p>
-        <h3>Co so 2:</h3>
-        <p>Toa nha CT3 - Yen Hoa - Cau Giay - Ha Noi</p>
+        <div class="item" [ngClass]="{'active': markersHighlightedPos==1}">
+          <h3>Co so 1:</h3>
+          <p>so 78/2 - To 4 - Bang B - Hoang Liet - Hoang Mai - HN</p>
+        </div>
+        <div class="item" [ngClass]="{'active': markersHighlightedPos==2}">
+          <h3>Co so 2:</h3>
+          <p>Toa nha CT3 - Yen Hoa - Cau Giay - Ha Noi</p>
+        </div>
+        
     </div>
     <div class="col-sm-8">
         <div #gmap style="width:100%;height:400px"></div>

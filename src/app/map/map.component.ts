@@ -10,10 +10,12 @@ import { } from '@types/googlemaps';
 export class MapComponent {
   markers: [any];
   styles: any;
+  markersHighlightedPos: number;
   @ViewChild('gmap') gmapElement: any;
   map: google.maps.Map;
   ngOnInit(): void {
     this.markers = [{}];
+    this.markersHighlightedPos = -1;
       this.styles = [
         {
             "elementType": "geometry",
@@ -175,6 +177,8 @@ export class MapComponent {
         content: "CS1: so 78/2 - To 4 - Bang B - Hoang Liet - Hoang Mai - HN"
       });
       infowindow.open(this.map, marker1);
+      this.markersHighlightedPos = 1;
+      
     });
     marker2.addListener('click', (event)=> {
       this.map.setOptions({
@@ -185,8 +189,11 @@ export class MapComponent {
         content: "CS3: Toa nha CT3 - Yen Hoa - Cau Giay - Ha Noi"
       });
       infowindow.open(this.map, marker2);
+      this.markersHighlightedPos = 2;
     });
+    
     this.setBounds();
+    
   }
 
   setBounds() {
