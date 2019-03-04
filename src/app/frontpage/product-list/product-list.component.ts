@@ -7,7 +7,7 @@ import { OnChanges, Input, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./product-list.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export default class ProductListComponent {
+export class ProductListComponent {
   ngOnInit(): void {
     console.log("product-list component");
   }

@@ -13,13 +13,14 @@ import { FooterComponent} from './footer/footer.component';
 import { FrontPageModule } from './frontpage/frontpage.module';
 import { MapPageModule } from './map/map.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-
+import {TemplateComponent} from './componentTemplate/template.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,

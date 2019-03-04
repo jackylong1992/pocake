@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import {MaterialModule} from '../material.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import MapComponent from './map.component';
+import {MapComponent} from './map.component';
 import { AgmCoreModule } from '@agm/core';
 
 @NgModule({

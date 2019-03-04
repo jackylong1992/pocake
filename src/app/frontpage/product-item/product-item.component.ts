@@ -7,7 +7,7 @@ import { OnChanges, Input, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./product-item.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export default class ProductItemComponent {
+export class ProductItemComponent {
   ngOnInit(): void {
     console.log("product-item component");
   }

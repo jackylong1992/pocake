@@ -7,7 +7,7 @@ import { } from '@types/googlemaps';
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss']
 })
-export default class MapComponent {
+export class MapComponent {
   markers: [any];
   styles: any;
   @ViewChild('gmap') gmapElement: any;
