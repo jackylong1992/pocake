@@ -145,7 +145,10 @@ $navbar-horizontal-padding: 25px;
     display: flex;
     align-items: center;
     background: #850015;
-    color: #fff600;
+    a {
+      color: #fff600;
+    }
+    
     @media (max-width: $screen-xs-max) {
       position: absolute;
       width: 100%;
