@@ -2,7 +2,7 @@
     <h2>Thuc don</h2>
     <div class="content row">
         <div >
-            <product-item-component *ngFor="let itemData of productList" [data]="itemData"></product-item-component>
+            <product-item-component *ngFor="let itemData of productList" [data]="itemData" (click)="itemClick()"></product-item-component>
         </div>
     </div>
 </div>

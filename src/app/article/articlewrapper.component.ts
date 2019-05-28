@@ -1,15 +1,24 @@
 import { Component } from '@angular/core';
-import * as $ from 'jquery';
-import { Router } from '@angular/router';
+
+import { Hero }    from './hero';
+
 @Component({
+  selector: 'app-hero-form',
   templateUrl: './articlewrapper.component.html',
   styleUrls: ['./articlewrapper.component.scss']
 })
-export class ArticleWrapperComponent {
-  constructor(private router: Router) {
+export class HeroFormComponent {
 
-  }
-  ngOnInit(): void {
-      
+  powers = ['Really Smart', 'Super Flexible',
+            'Super Hot', 'Weather Changer'];
+
+  model = new Hero(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
+
+  submitted = false;
+
+  onSubmit() { this.submitted = true; }
+
+  newHero() {
+    this.model = new Hero(42, '', '');
   }
 }

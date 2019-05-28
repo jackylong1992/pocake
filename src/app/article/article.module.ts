@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ArticleWrapperComponent } from './articlewrapper.component';
+import { HeroFormComponent } from './articlewrapper.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import {MaterialModule} from '../material.module';
@@ -11,7 +11,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     RouterModule.forChild([
       { 
         path: 'article', 
-        component: ArticleWrapperComponent,
+        component: HeroFormComponent,
         children: [
         ]
        },
@@ -22,7 +22,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ReactiveFormsModule
   ],
   declarations: [
-    ArticleWrapperComponent,
+    HeroFormComponent,
   ],
   exports: [
     

@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import * as $ from 'jquery';
 import { OnChanges, Input, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 @Component({
   selector: 'product-list-component',
   templateUrl: './product-list.component.html',
@@ -8,6 +9,9 @@ import { OnChanges, Input, EventEmitter, Output } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class ProductListComponent {
+  constructor (private router: Router) {
+
+  }
   productList: any;
   ngOnInit(): void {
     console.log("product-list component");
@@ -25,5 +29,9 @@ export class ProductListComponent {
         name: "Heo khô xé tỏi"
       }
     ];
+  }
+
+  itemClick() {
+    this.router.navigate(['/article']);
   }
 }
