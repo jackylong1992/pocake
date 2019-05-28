@@ -1,0 +1,5 @@
+@import '../../../scss/mixin.scss';
+.feedback-component {
+  @extend %full-width;
+  background: #f2f2f2;
+}

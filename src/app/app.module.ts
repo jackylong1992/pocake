@@ -11,6 +11,7 @@ import { FooterComponent} from './footer/footer.component';
 
 
 import { FrontPageModule } from './frontpage/frontpage.module';
+import { ArticleModule } from './article/article.module';
 import { MapPageModule } from './map/map.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {TemplateComponent} from './componentTemplate/template.component';
@@ -34,6 +35,7 @@ import {TemplateComponent} from './componentTemplate/template.component';
       { path: '**', redirectTo: 'frontpage', pathMatch: 'full' }
     ]),
     FrontPageModule,
+    ArticleModule,
     MapPageModule
   ],
   bootstrap: [AppComponent]

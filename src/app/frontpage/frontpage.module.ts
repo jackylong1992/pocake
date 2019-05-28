@@ -6,6 +6,7 @@ import {MaterialModule} from '../material.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ProductListComponent} from './product-list/product-list.component';
 import {ProductItemComponent} from './product-item/product-item.component';
+import {FeedbackComponent} from './feedback-slider/feedback.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {ProductItemComponent} from './product-item/product-item.component';
   declarations: [
     FrontPageWrapperComponent,
     ProductListComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    FeedbackComponent
   ],
   exports: [
     
