@@ -7,10 +7,14 @@
         <input type="text" class="form-control" id="name"
                required
                [(ngModel)]="model.name" name="name"
-               #name="ngModel">
+               #name="ngModel" minlength="8">
         <div [hidden]="name.valid || name.pristine"
              class="alert alert-danger">
-          Name is required
+          Name is required 
+        </div>
+        <div [hidden]="!name.errors?.minlength || name.untouched"
+             class="alert alert-danger">
+          minlength is 8 character
         </div>
       </div>
 
