@@ -15,4 +15,11 @@ export class ProductItemComponent implements OnChanges {
   ngOnChanges(changes: SimpleChanges): void {
     console.log('changes = ', changes);
   }
+  ngAfterContentInit() : void {
+    console.log("product-item after content init");
+  }
+
+  ngAfterViewInit() : void {
+    console.log("product-item after view init");
+  }
 }

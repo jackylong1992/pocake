@@ -12,7 +12,7 @@ declare var $ : any;
 export class FeedbackComponent {
   productList: any;
   ngOnInit(): void {
-    console.log("product-list component");
+    // console.log("product-list component");
     this.productList = [
       {
         name: "Bông lan trứng muối"
