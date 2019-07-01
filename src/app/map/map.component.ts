@@ -1,7 +1,9 @@
-import { Component, ViewChild  } from '@angular/core';
+/// <reference types="@types/googlemaps" />
+import { Component, ViewChild, ElementRef  } from '@angular/core';
 import * as $ from 'jquery';
 import { OnChanges, Input, EventEmitter, Output } from '@angular/core';
-import { } from 'googlemaps';
+// import { } from 'googlemaps';
+declare let google: any;
 @Component({
   selector: 'map-component',
   templateUrl: './map.component.html',
@@ -11,7 +13,7 @@ export class MapComponent {
   markers: [any];
   styles: any;
   markersHighlightedPos: number;
-  @ViewChild('gmap') gmapElement: any;
+  @ViewChild('gmap', {read: ElementRef, static: true}) gmapElement: any;
   map: google.maps.Map;
   ngOnInit(): void {
     this.markers = [{}];
