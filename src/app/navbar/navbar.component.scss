@@ -29,16 +29,18 @@ $navbar-horizontal-padding: 25px;
       padding: 0 !important;
     }
   }
+  
   .nav.navbar-nav {
     margin-left: -22px;
   }
   ul {
     padding-left: 0;
     li {
+      
       list-style-type: none;
       a:hover, a:focus {
-        background: $primary-color;
-        opacity: 0.7;
+        background: transparent;
+        // opacity: 0.7;
         text-decoration: none;
       }
     }
@@ -48,20 +50,21 @@ $navbar-horizontal-padding: 25px;
     padding-left: 0;
     > li {
       list-style-type: none;
-      
+      background: transparent;
+      &:hover,&:focus {
+        background-color: transparent;
+      }
       > a {
-        
+        background: $primary-color;
         color: #fff;
         font-weight: bold;
         font-size: $font-size-6;
         padding-left: $navbar-horizontal-padding;
         padding-right: $navbar-horizontal-padding;
+        &.active-link {
+          color: #850015
+        }
         
-      }
-      &.active a {
-        color: #fff;
-        background: $primary-color;
-        opacity: 0.7;
       }
       &.has-sub-menu {
         background: url("../../assets/images/arrow-down.svg") right no-repeat;
@@ -123,6 +126,7 @@ $navbar-horizontal-padding: 25px;
     justify-content: left;
     align-items: center;
     font-size: 31px;
+    text-decoration: none;
     @media (max-width: $screen-xs-max) {
       font-size: 22px;
       width: calc(100% - 80px);

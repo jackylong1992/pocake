@@ -8,6 +8,9 @@ import {ProductListComponent} from './product-list/product-list.component';
 import {ProductItemComponent} from './product-item/product-item.component';
 import {FeedbackComponent} from './feedback-slider/feedback.component';
 import { FrontpageContentComponent } from './frontpage-content/frontpage-content.component';
+import { ArticleDigitalsignatureComponent } from './article-digitalsignature/article-digitalsignature.component';
+import { ArticleElectricbillComponent } from './article-electricbill/article-electricbill.component';
+import { ArticleGuideComponent } from './article-guide/article-guide.component';
 
 
 @NgModule({
@@ -16,6 +19,24 @@ import { FrontpageContentComponent } from './frontpage-content/frontpage-content
       { 
         path: 'frontpage', 
         component: FrontPageWrapperComponent,
+        children: [
+        ]
+       },
+       { 
+        path: 'digital-signature', 
+        component: ArticleDigitalsignatureComponent,
+        children: [
+        ]
+       },
+       { 
+        path: 'electric-bill', 
+        component: ArticleElectricbillComponent,
+        children: [
+        ]
+       },
+       { 
+        path: 'guide', 
+        component: ArticleGuideComponent,
         children: [
         ]
        },
@@ -30,7 +51,10 @@ import { FrontpageContentComponent } from './frontpage-content/frontpage-content
     ProductListComponent,
     ProductItemComponent,
     FeedbackComponent,
-    FrontpageContentComponent
+    FrontpageContentComponent,
+    ArticleDigitalsignatureComponent,
+    ArticleElectricbillComponent,
+    ArticleGuideComponent
   ],
   exports: [
     

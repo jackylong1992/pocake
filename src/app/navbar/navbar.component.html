@@ -1,8 +1,6 @@
 <div id="top">
-  <div class="main-logo">
-    <a routerLink="/frontpage"></a>
-      Chữ ký số Viettel
-  </div>
+    <a class="main-logo" routerLink="/frontpage">Chữ ký số Viettel</a>
+      
   <div class="info">
     <a href="tel:0985999765">
         Gọi điện ngay - Mr Thắng - 0985999765
@@ -16,18 +14,18 @@
 </div>
 <nav class="navbar" [ngClass]="{'collapsed': isCollapsed}">
   <ul class="nav navbar-nav">
-      <li><a routerLink="/frontpage">Trang chủ</a></li>
+      <li><a routerLink="/frontpage" routerLinkActive="active-link">Trang chủ</a></li>
       <li >
       <!-- <li class="has-sub-menu"> -->
-        <a>Chữ ký số</a>
+        <a routerLink="/digital-signature" routerLinkActive="active-link">Chữ ký số</a>
         <!-- <ul>
           <li><a>Bong lan trung muoi</a></li>
           <li><a>Kho ga la chanh</a></li>
           <li><a>Banh ga to</a></li>
         </ul> -->
       </li>
-      <li><a routerLink="#">Hóa đơn điện tử</a></li>
-      <li><a routerLink="/map">Hướng dẫn</a></li>
-      <li><a routerLink="/map">Liên hệ</a></li>
+      <li><a routerLink="/electric-bill" routerLinkActive="active-link">Hóa đơn điện tử</a></li>
+      <li><a routerLink="/guide" routerLinkActive="active-link">Hướng dẫn</a></li>
+      <li><a routerLink="/map" routerLinkActive="active-link">Liên hệ</a></li>
   </ul>
 </nav>
