@@ -1,0 +1,127 @@
+@import '../../../scss/mixin.scss';
+.frontpage-content {
+  padding: 30px 0;
+  @media (max-width: $screen-xs-max) {
+    padding: 30px 15px;
+  }
+  .frontpage-box {
+    text-align: center;
+    background: #ccc;
+    color: #fff;
+    padding: 0 0 30px;
+    h3 {
+      background: #000;
+      padding: 20px 0;
+    }
+  }
+  .definition {
+    margin-left: -9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    padding-right: 9999px;
+    background: lighten($primary-color, 10%);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    color: #fff;
+    h3 {
+      text-align: center;
+    }
+
+    .phone {
+      a {
+        font-size: 60px;
+        @media (max-width: $screen-xs-max) {
+          font-size: 35px;
+        }
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+          font-size: 45px;
+        }
+        
+        background: url("./../../../assets//images/phone.png") left no-repeat;
+        background-size: contain;
+        padding-left: 80px;
+      }
+
+      .column:first-of-type {
+        padding-right: 20px;
+      }
+      .column:last-of-type {
+        padding-left: 20px;
+      }
+    }
+
+    
+  }
+
+  .price {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+      // tr:nth-child(even) {
+      //   background-color: lighten($primary-color, 10%);
+      // }
+    }
+    .notice {
+      ul {
+        li {
+          list-style-type: none;
+          &:before {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: red;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .procedure {
+    .row {
+      @extend %row-equal-height;
+      @media (min-width: $screen-sm-min) {
+        width: 100vw; 
+        position: relative;
+          left: -367px;
+      }
+      
+      @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        left: 0;
+      }
+      @media (min-width: $screen-xs-max) and (max-width: $screen-sm-max) {
+        left: -10px;
+      }
+      background: lighten($primary-color, 10%);
+      margin-top: 30px;
+
+      @media (max-width: $screen-xs-max) {
+        .picture-column {
+          width: 100%;
+        }
+      }
+    }
+    .picture {
+      width: 100%;
+      height: 500px;
+      background: url("../../../assets/images/chu-ky-so-viettel.png") center no-repeat;
+      background-size: cover
+    }
+    .content-column {
+      display: flex;
+      align-items: center;
+    }
+    .content {
+      color: #fff;
+    }
+  }
+}

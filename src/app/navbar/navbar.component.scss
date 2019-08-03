@@ -21,8 +21,8 @@ $navbar-horizontal-padding: 25px;
     margin-left: -15px;
     margin-right: -15px;
     &.collapsed {
-      height: 175px;
-      overflow: auto;
+      height: auto;
+      // overflow: auto;
     }
     ul {
       margin: 0 !important;
@@ -116,23 +116,27 @@ $navbar-horizontal-padding: 25px;
   
   background: #fff;
   .main-logo {
-    width: 250px;
+    width: calc(100% - 200px);
     height: 50px;
     margin-top: 3px;
     display: inline-flex;
     justify-content: left;
     align-items: center;
     font-size: 31px;
+    @media (max-width: $screen-xs-max) {
+      font-size: 22px;
+      width: calc(100% - 80px);
+    }
     color: #850015;
     font-weight: bold;
-    background: url("../../assets/images/pocake-logo.jpg") left no-repeat;
+    background: url("../../assets/images/viettel-logo.png") left no-repeat;
     background-size: contain;
     padding-left: 60px;
     position: relative;
 
     a {
       position: absolute;
-      width: 100%;
+      width: calc(100% - 80px);
       height: 100%;
     }
   }
@@ -144,9 +148,9 @@ $navbar-horizontal-padding: 25px;
     justify-content: center;
     display: flex;
     align-items: center;
-    background: #850015;
+    background: darken($primary-color, 10%);
     a {
-      color: #fff600;
+      color: #fff;
     }
     
     @media (max-width: $screen-xs-max) {

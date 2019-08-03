@@ -7,6 +7,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ProductListComponent} from './product-list/product-list.component';
 import {ProductItemComponent} from './product-item/product-item.component';
 import {FeedbackComponent} from './feedback-slider/feedback.component';
+import { FrontpageContentComponent } from './frontpage-content/frontpage-content.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {FeedbackComponent} from './feedback-slider/feedback.component';
     FrontPageWrapperComponent,
     ProductListComponent,
     ProductItemComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    FrontpageContentComponent
   ],
   exports: [
     

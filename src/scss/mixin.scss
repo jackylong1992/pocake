@@ -12,6 +12,11 @@
     padding-left: 9999px;
     padding-right: 9999px;
 }
+%row-equal-height {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
 $screen-xs-max: 768px;
 $screen-sm-min: $screen-xs-max + 1px;
 $screen-sm-max: 992px;
@@ -21,7 +26,7 @@ $screen-lg-min: 1400px;
 
 $card-length: 135px;
 
-$primary-color: #a9001b;
+$primary-color: #00908c;
 
 $font-size-1: 45px;
 $font-size-2: 40px;

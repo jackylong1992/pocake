@@ -1,12 +1,11 @@
 <div id="top">
   <div class="main-logo">
     <a routerLink="/frontpage"></a>
-      PÔ CAKE
+      Chữ ký số Viettel
   </div>
   <div class="info">
-    <a href="tel:0985551508">
-        Gọi điện ngay - Ship liền tay (24/7)
-        0985551508
+    <a href="tel:0985999765">
+        Gọi điện ngay - Mr Thắng - 0985999765
     </a>
   </div>
   <div class="visible-xs collapse-button" (click)="collapseButtonClick()">
@@ -17,16 +16,18 @@
 </div>
 <nav class="navbar" [ngClass]="{'collapsed': isCollapsed}">
   <ul class="nav navbar-nav">
-      <li><a routerLink="/frontpage">Home</a></li>
-      <li class="has-sub-menu">
-        <a>San pham</a>
-        <ul>
+      <li><a routerLink="/frontpage">Trang chủ</a></li>
+      <li >
+      <!-- <li class="has-sub-menu"> -->
+        <a>Chữ ký số</a>
+        <!-- <ul>
           <li><a>Bong lan trung muoi</a></li>
           <li><a>Kho ga la chanh</a></li>
           <li><a>Banh ga to</a></li>
-        </ul>
+        </ul> -->
       </li>
-      <li><a routerLink="#">Bai viet</a></li>
-      <li><a routerLink="/map">Lien he</a></li>
+      <li><a routerLink="#">Hóa đơn điện tử</a></li>
+      <li><a routerLink="/map">Hướng dẫn</a></li>
+      <li><a routerLink="/map">Liên hệ</a></li>
   </ul>
 </nav>
