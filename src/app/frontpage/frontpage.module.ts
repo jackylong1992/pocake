@@ -35,7 +35,7 @@ import { ArticleGuideComponent } from './article-guide/article-guide.component';
         ]
        },
        { 
-        path: 'guide', 
+        path: 'price', 
         component: ArticleGuideComponent,
         children: [
         ]
