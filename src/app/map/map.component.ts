@@ -147,50 +147,54 @@ export class MapComponent {
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     this.map = new google.maps.Map(this.gmapElement.nativeElement, mapProp);
-    let linhDam = new google.maps.LatLng(20.954800199999998, 105.82895409999999);
-    let cauGiay = new google.maps.LatLng(21.023090704899356, 105.78870105717218);
+    let linhDam = new google.maps.LatLng(21.00948213550961, 105.85033714771272);
+    // let cauGiay = new google.maps.LatLng(21.023090704899356, 105.78870105717218);
 
     const marker1 = new google.maps.Marker({
         position: linhDam,
         map: this.map,
         title: 'Linh Dam'
     });
-    const marker2 = new google.maps.Marker({
-        position: cauGiay,
-        map: this.map,
-        title: 'Cau giay',
-    });
+    // const marker2 = new google.maps.Marker({
+    //     position: cauGiay,
+    //     map: this.map,
+    //     title: 'Cau giay',
+    // });
+    // this.markers.push({
+    //     name: 'linhDam',
+    //     mrk: marker1,
+    // }, {
+    //     name: 'cauGiay',
+    //     mrk: marker2,
+    // });
     this.markers.push({
         name: 'linhDam',
         mrk: marker1,
-    }, {
-        name: 'cauGiay',
-        mrk: marker2,
     });
     
     marker1.addListener('click', (event)=> {
       this.map.setOptions({
         center: new google.maps.LatLng(event.latLng.lat(), event.latLng.lng()),
-        zoom: 18
+        zoom: 15
       });
       var infowindow = new google.maps.InfoWindow({
-        content: "CS1: so 78/2 - To 4 - Bang B - Hoang Liet - Hoang Mai - HN"
+        content: "Số 16 - Lê Đại Hành - Quận Hai Bà Trưng - Hà Nội"
       });
       infowindow.open(this.map, marker1);
       this.markersHighlightedPos = 1;
       
     });
-    marker2.addListener('click', (event)=> {
-      this.map.setOptions({
-        center: new google.maps.LatLng(event.latLng.lat(), event.latLng.lng()),
-        zoom: 18
-      });
-      var infowindow = new google.maps.InfoWindow({
-        content: "CS3: Toa nha CT3 - Yen Hoa - Cau Giay - Ha Noi"
-      });
-      infowindow.open(this.map, marker2);
-      this.markersHighlightedPos = 2;
-    });
+    // marker2.addListener('click', (event)=> {
+    //   this.map.setOptions({
+    //     center: new google.maps.LatLng(event.latLng.lat(), event.latLng.lng()),
+    //     zoom: 18
+    //   });
+    //   var infowindow = new google.maps.InfoWindow({
+    //     content: "CS3: Toa nha CT3 - Yen Hoa - Cau Giay - Ha Noi"
+    //   });
+    //   infowindow.open(this.map, marker2);
+    //   this.markersHighlightedPos = 2;
+    // });
     
     this.setBounds();
     
