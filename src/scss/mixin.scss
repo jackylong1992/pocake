@@ -17,6 +17,19 @@
     display: flex;
     flex-wrap: wrap;
 }
+@mixin styled-list ($color: $primary-color) {
+    li {
+        list-style-type: none;
+        &:before {
+          content: "";
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: $color;
+          margin-right: 10px;
+        }
+      }
+}
 $screen-xs-max: 768px;
 $screen-sm-min: $screen-xs-max + 1px;
 $screen-sm-max: 992px;
