@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  // tr:nth-child(even) {
+  //   background-color: lighten($primary-color, 10%);
+  // }
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  background: url("../../../assets/images/viettel-ca.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.digital-signature {
+  padding-bottom: 50px;
+}
+
+a {
+  color: #00918d;
+}
