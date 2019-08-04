@@ -2,6 +2,10 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 30px;
+
+  thead {
+    color: #fff;
+  }
   
   td, th {
     border: 1px solid #dddddd;
@@ -19,10 +23,30 @@ table {
   height: 300px;
   background: url("../../../assets/images/viettel-ca.jpg") center no-repeat;
   background-size: contain;
+  margin-top: 20px;
+
+  &.digital-signature-image {
+    background: url("../../../assets/images/hoa-don-dien-tu-viettel.png") center no-repeat;
+    background-size: contain;
+  }
+
+}
+
+img {
+  margin-top: 20px;
 }
 
 .digital-signature {
   padding-bottom: 50px;
+  line-height: 1.8;
+
+  .luu-y {
+    padding: 20px;
+    background: #FFFDC9;
+    border: solid 1px;
+    border-style: dashed;
+    margin-top: 20px;
+  }
 }
 
 a {
