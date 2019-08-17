@@ -62,7 +62,8 @@ $navbar-horizontal-padding: 25px;
         padding-left: $navbar-horizontal-padding;
         padding-right: $navbar-horizontal-padding;
         &.active-link {
-          color: #850015
+          // color: #850015
+          background: red;  
         }
         
       }

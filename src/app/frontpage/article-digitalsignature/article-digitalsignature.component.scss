@@ -12,10 +12,7 @@ table {
     text-align: left;
     padding: 8px;
   }
-  
-  // tr:nth-child(even) {
-  //   background-color: lighten($primary-color, 10%);
-  // }
+
   &.bordered {
     border-color: red;
     td, th {
@@ -49,7 +46,7 @@ img {
   .luu-y {
     padding: 20px;
     background: #FFFDC9;
-    border: solid 1px;
+    border: solid 1px red;
     border-style: dashed;
     margin-top: 20px;
   }
