@@ -11,6 +11,7 @@ import { FrontpageContentComponent } from './frontpage-content/frontpage-content
 import { ArticleDigitalsignatureComponent } from './article-digitalsignature/article-digitalsignature.component';
 import { ArticleElectricbillComponent } from './article-electricbill/article-electricbill.component';
 import { ArticleGuideComponent } from './article-guide/article-guide.component';
+import { SocialInsuranceComponent } from './social-insurance/social-insurance.component';
 
 
 @NgModule({
@@ -40,6 +41,12 @@ import { ArticleGuideComponent } from './article-guide/article-guide.component';
         children: [
         ]
        },
+       { 
+        path: 'social-insurance', 
+        component: SocialInsuranceComponent,
+        children: [
+        ]
+       },
     ]),
     SharedModule,
     MaterialModule,
@@ -54,7 +61,8 @@ import { ArticleGuideComponent } from './article-guide/article-guide.component';
     FrontpageContentComponent,
     ArticleDigitalsignatureComponent,
     ArticleElectricbillComponent,
-    ArticleGuideComponent
+    ArticleGuideComponent,
+    SocialInsuranceComponent
   ],
   exports: [
     
