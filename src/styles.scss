@@ -1,3 +1,4 @@
+@import '../src/scss/mixin.scss';
 a {
   color: #fff;
   &:hover {
@@ -39,4 +40,10 @@ a {
 
 .main-header, .sub-header {
   padding-bottom: 30px;
+}
+
+.container {
+  @media (min-width: $screen-lg-min) {
+    width: 1400px;
+  }
 }
