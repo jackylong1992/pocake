@@ -12,6 +12,7 @@ import { ArticleDigitalsignatureComponent } from './article-digitalsignature/art
 import { ArticleElectricbillComponent } from './article-electricbill/article-electricbill.component';
 import { ArticleGuideComponent } from './article-guide/article-guide.component';
 import { SocialInsuranceComponent } from './social-insurance/social-insurance.component';
+import { TransclusionContainerComponent } from './transclusion-container/transclusion-container.component';
 
 
 @NgModule({
@@ -62,7 +63,8 @@ import { SocialInsuranceComponent } from './social-insurance/social-insurance.co
     ArticleDigitalsignatureComponent,
     ArticleElectricbillComponent,
     ArticleGuideComponent,
-    SocialInsuranceComponent
+    SocialInsuranceComponent,
+    TransclusionContainerComponent
   ],
   exports: [
     

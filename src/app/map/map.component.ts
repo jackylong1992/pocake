@@ -142,7 +142,7 @@ export class MapComponent {
     ];
     var mapProp = {
       center: new google.maps.LatLng(20.99891330597205, 105.81825256347658),
-      zoom: 15,
+      zoom: 10,
       style: this.styles,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
@@ -175,7 +175,7 @@ export class MapComponent {
     marker1.addListener('click', (event)=> {
       this.map.setOptions({
         center: new google.maps.LatLng(event.latLng.lat(), event.latLng.lng()),
-        zoom: 15
+        zoom: 10
       });
       var infowindow = new google.maps.InfoWindow({
         content: "Số 16 - Lê Đại Hành - Quận Hai Bà Trưng - Hà Nội"
@@ -212,7 +212,7 @@ export class MapComponent {
   resetMap() {
     var mapProp = {
       center: new google.maps.LatLng(20.99891330597205, 105.81825256347658),
-      zoom: 15,
+      zoom: 10,
       style: this.styles,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
