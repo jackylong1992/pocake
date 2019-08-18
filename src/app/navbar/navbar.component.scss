@@ -131,6 +131,7 @@ $navbar-horizontal-padding: 25px;
     @media (max-width: $screen-xs-max) {
       font-size: 22px;
       width: calc(100% - 80px);
+      line-height: 1.1;
     }
     @media (min-width: $screen-xs-max) {
       height: 80px;
@@ -162,8 +163,16 @@ $navbar-horizontal-padding: 25px;
     display: flex;
     align-items: center;
     background: darken($primary-color, 10%);
+    &:hover {
+      background: red;
+    }
     a {
       color: #fff;
+      font-size: 24px;
+      &:hover {
+        color: #fff;
+        opacity: 1;
+      }
     }
     
     @media (max-width: $screen-xs-max) {

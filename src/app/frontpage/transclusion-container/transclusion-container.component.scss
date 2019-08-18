@@ -1,4 +1,7 @@
 @import '../../../scss/mixin.scss';
+.top-picture {
+  max-width: 100%;
+}
 .row-eq-height {
   @extend %row-equal-height;
 }
