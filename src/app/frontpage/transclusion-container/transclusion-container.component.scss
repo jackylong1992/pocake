@@ -35,3 +35,44 @@
     }
   }
 }
+
+.contact {
+  text-align: center;
+  background: #cccccc4f;
+  h3 {
+    color: #fff;
+    background: #00918d;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  h4 {
+    font-size: 18px;
+  }
+
+  a {
+    color:#00918d;
+  }
+  
+  > img {
+    width: 100%;
+  }
+  a {
+    color: #000;
+    &:hover,
+    &:focus {
+      color: red;
+    }
+  }
+
+  .phone {
+    color: red;
+  }
+
+  .ho-tro-ky-thuat {
+    text-align: center;
+    a {
+      font-size: 30px;
+      color: red;
+    }
+  }
+}

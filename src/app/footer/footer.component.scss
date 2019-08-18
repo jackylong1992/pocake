@@ -70,6 +70,10 @@
         font-weight: bold;
     }
     .quick-menu {
+        a {
+            text-decoration: underline;
+        }
+        
         @media (min-width: $screen-sm-min) {
             padding-left: 60px;
         }
