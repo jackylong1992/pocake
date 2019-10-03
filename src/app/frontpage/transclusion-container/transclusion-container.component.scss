@@ -14,7 +14,8 @@
   }
   ul {
     padding-left: 0;
-    background: #cccccc4f;
+    // background: rgba(#ccc, 0.5);
+    background: rgba(#ccc, 0.5);
     li {
       list-style-type: none;
       padding: 8px 10px;
@@ -31,7 +32,7 @@
   }
   ul {
     padding-left: 0;
-    background: #cccccc4f;
+    background: rgba(#ccc, 0.5);
     li {
       list-style-type: none;
       padding: 8px 10px;
@@ -41,7 +42,7 @@
 
 .contact {
   text-align: center;
-  background: #cccccc4f;
+  background: rgba(#ccc, 0.5);
   h3 {
     color: #fff;
     background: #00918d;
